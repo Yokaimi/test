@@ -1,3 +1,5 @@
+-- Main loop
+while true do
   -- Read the contents of go.json
   local goJsonContents = readJSON("C:\\Users\\Administrator\\Documents\\go.json")
   
@@ -14,3 +16,7 @@
       sleep(2000)
       processPlayersAndObjects(bot, playerName)
   end
+  
+  -- Sleep before checking again
+  sleep(10000) -- Adjust sleep time as needed
+end
